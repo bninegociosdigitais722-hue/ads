@@ -310,3 +310,21 @@ create policy "ai_runs_member_access"
   to authenticated
   using (private.is_workspace_member(workspace_id, (select auth.uid())))
   with check (private.is_workspace_member(workspace_id, (select auth.uid())));
+
+grant usage on schema public to authenticated, service_role;
+
+grant select, update on table public.profiles to authenticated;
+grant select, insert, update on table public.workspaces to authenticated;
+grant select, insert, update, delete on table public.workspace_members to authenticated;
+grant select on table public.plans to authenticated;
+grant select on table public.subscriptions to authenticated;
+grant select on table public.credit_ledger to authenticated;
+grant select on table public.ads to authenticated;
+grant select, insert, update, delete on table public.saved_ads to authenticated;
+grant select, insert, update, delete on table public.collections to authenticated;
+grant select, insert, update, delete on table public.collection_ads to authenticated;
+grant select, insert, update, delete on table public.ai_runs to authenticated;
+
+grant all privileges on all tables in schema public to service_role;
+grant all privileges on all sequences in schema public to service_role;
+grant execute on all functions in schema public to service_role;
