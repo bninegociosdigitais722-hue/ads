@@ -1,0 +1,23 @@
+{
+  "name": "@ads/types",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./ads": "./src/ads.ts",
+    "./ai": "./src/ai.ts",
+    "./auth": "./src/auth.ts",
+    "./billing": "./src/billing.ts",
+    "./database": "./src/database.ts",
+    "./library": "./src/library.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
