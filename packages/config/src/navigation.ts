@@ -7,16 +7,19 @@ export interface NavigationItem {
 
 export interface NavigationSection {
   title: string;
+  icon?: string;
   items: NavigationItem[];
 }
 
 export const customerNavigation: NavigationSection[] = [
   {
     title: "Inicio",
+    icon: "layout-dashboard",
     items: [{ title: "Dashboard", href: "/dashboard", icon: "layout-dashboard" }]
   },
   {
     title: "Mineracao",
+    icon: "megaphone",
     items: [
       { title: "Meta Ads", href: "/mineracao/meta-ads", icon: "megaphone" },
       { title: "Google Ads", href: "/mineracao/google-ads", icon: "search" },
@@ -24,7 +27,8 @@ export const customerNavigation: NavigationSection[] = [
     ]
   },
   {
-    title: "Analises",
+    title: "Analise",
+    icon: "activity",
     items: [
       { title: "Analise de Anuncios", href: "/analises/anuncios", icon: "activity" },
       {
@@ -36,6 +40,7 @@ export const customerNavigation: NavigationSection[] = [
   },
   {
     title: "Criacao",
+    icon: "blocks",
     items: [
       { title: "Copy", href: "/criacao/copy", icon: "file-text" },
       { title: "Imagens", href: "/criacao/imagens", icon: "image" },
@@ -49,6 +54,7 @@ export const customerNavigation: NavigationSection[] = [
   },
   {
     title: "Biblioteca",
+    icon: "bookmark",
     items: [
       { title: "Salvos", href: "/biblioteca/salvos", icon: "bookmark" },
       { title: "Colecoes", href: "/biblioteca/colecoes", icon: "folder" }
@@ -56,6 +62,7 @@ export const customerNavigation: NavigationSection[] = [
   },
   {
     title: "Conta",
+    icon: "settings",
     items: [
       { title: "Plano e Creditos", href: "/plano-creditos", icon: "credit-card" },
       { title: "Configuracoes", href: "/configuracoes", icon: "settings" }
@@ -66,6 +73,7 @@ export const customerNavigation: NavigationSection[] = [
 export const adminNavigation: NavigationSection[] = [
   {
     title: "Operacao",
+    icon: "gauge",
     items: [
       { title: "Visao Operacional", href: "/operacional", icon: "gauge" },
       { title: "Usuarios", href: "/usuarios", icon: "users" },
@@ -75,6 +83,7 @@ export const adminNavigation: NavigationSection[] = [
   },
   {
     title: "Sistema",
+    icon: "heart-pulse",
     items: [
       { title: "Monitoramento", href: "/monitoramento", icon: "activity" },
       { title: "Metricas", href: "/metricas", icon: "bar-chart-3" },
