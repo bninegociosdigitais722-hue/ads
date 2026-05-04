@@ -9,18 +9,28 @@
     "dev:app": "pnpm --filter @ads/app dev",
     "dev:admin": "pnpm --filter @ads/admin dev",
     "lint": "turbo lint",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "ui:add:app": "shadcn add --cwd apps/app",
+    "ui:add:admin": "shadcn add --cwd apps/admin",
+    "ui:info:app": "shadcn info --cwd apps/app",
+    "ui:info:admin": "shadcn info --cwd apps/admin"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss": "^8.5.12"
+    }
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
+    "@eslint/js": "^10.0.1",
     "@next/eslint-plugin-next": "16.2.4",
-    "@types/node": "^24.10.0",
-    "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0",
-    "eslint": "^9.39.1",
-    "prettier": "^3.6.2",
-    "turbo": "^2.6.1",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.3"
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^10.3.0",
+    "prettier": "^3.8.3",
+    "shadcn": "^4.6.0",
+    "turbo": "^2.9.8",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.1"
   }
 }

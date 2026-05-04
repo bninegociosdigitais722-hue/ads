@@ -14,19 +14,19 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@supabase/ssr": "^0.7.0",
-    "@supabase/supabase-js": "^2.74.0",
-    "openai": "^6.7.0",
-    "posthog-node": "^5.8.1",
+    "@supabase/ssr": "^0.10.2",
+    "@supabase/supabase-js": "^2.105.2",
+    "openai": "^6.35.0",
+    "posthog-node": "^5.33.2",
     "server-only": "^0.0.1",
-    "stripe": "^19.1.0",
-    "zod": "^3.25.76"
+    "stripe": "^22.1.0",
+    "zod": "^4.4.3"
   },
   "peerDependencies": {
     "next": "16.2.4"
   },
   "devDependencies": {
     "@ads/types": "workspace:*",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3"
   }
 }
